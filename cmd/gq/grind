@@ -1,0 +1,113 @@
+events: cpu(ms)
+fl=(1) /usr/local/Cellar/go/1.4.2/libexec/src/runtime/cgocall.go
+fn=(1) runtime.cgocall_errno
+131 540
+
+fl=(2) /usr/local/Cellar/go/1.4.2/libexec/src/runtime/sys_darwin_amd64.s
+fn=(2) runtime.mach_semaphore_signal
+430 10
+
+fl=(3) /usr/local/Cellar/go/1.4.2/libexec/src/runtime/memclr_amd64.s
+fn=(3) runtime.memclr
+42 10
+
+fl=(4) /usr/local/Cellar/go/1.4.2/libexec/src/runtime/proc.c
+fn=(4) System
+2459 0
+cfl=(2)
+cfn=(2)
+calls=10 430
+2459 10
+cfl=(3)
+cfn=(3)
+calls=10 42
+2459 10
+
+fl=(5) /Users/aki/.go/src/github.com/aki017/gq/jq.go
+fn=(5) github.com/aki017/gq.(*JQ).Compile
+24 0
+cfl=(6) /Users/aki/.go/src/github.com/aki017/gq/
+cfn=(6) github.com/aki017/gq._Cfunc_jq_compile
+calls=520 46
+24 520
+
+fl=(5)
+fn=(7) github.com/aki017/gq.(*JQ).Parse
+61 0
+cfl=(5)
+cfn=(5)
+calls=520 24
+61 520
+
+fl=(6)
+fn=(6)
+46 0
+cfl=(1)
+cfn=(1)
+calls=520 131
+46 520
+
+fl=(6)
+fn=(8) github.com/aki017/gq._Cfunc_jq_next
+64 0
+cfl=(1)
+cfn=(1)
+calls=10 131
+64 10
+
+fl=(6)
+fn=(9) github.com/aki017/gq._Cfunc_jv_parser_next
+226 0
+cfl=(1)
+cfn=(1)
+calls=10 131
+226 10
+
+fl=(5)
+fn=(10) github.com/aki017/gq.func·001
+49 0
+cfl=(6)
+cfn=(8)
+calls=10 64
+49 10
+
+fl=(7) /Users/aki/.go/src/github.com/aki017/gq/jv_parser.go
+fn=(11) github.com/aki017/gq.func·002
+25 0
+cfl=(6)
+cfn=(9)
+calls=10 226
+25 10
+
+fl=(8) /Users/aki/.go/src/github.com/aki017/gq/cmd/gq/main.go
+fn=(12) main.main
+28 0
+cfl=(5)
+cfn=(7)
+calls=520 61
+28 520
+
+fl=(9) /usr/local/Cellar/go/1.4.2/libexec/src/runtime/asm_amd64.s
+fn=(13) runtime.goexit
+2232 0
+cfl=(10) /usr/local/Cellar/go/1.4.2/libexec/src/runtime/proc.go
+cfn=(14) runtime.main
+calls=520 63
+2232 520
+cfl=(5)
+cfn=(10)
+calls=10 49
+2232 10
+cfl=(7)
+cfn=(11)
+calls=10 25
+2232 10
+
+fl=(10)
+fn=(14)
+63 0
+cfl=(8)
+cfn=(12)
+calls=520 28
+63 520
+
